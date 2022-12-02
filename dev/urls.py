@@ -21,7 +21,6 @@ admin.site.index_title = "Welcome to Dev Page"
 admin.site.site_title = "Dev"
 
 # username=dev
-# pass=dev@2003
 
 urlpatterns = [
     path('admin/', admin.site.urls),
