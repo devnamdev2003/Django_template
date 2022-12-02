@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}contact body
+{% endblock title %}
+
+{% block body %}
+
+<body class="bg-dark bg-gradient">
+      <h1 class="  my-0 p-5 text-center  text-capitalize text-light"> contact</h1>
+      <div class="container-fluid my-0  pb-5">
+            <div class="container text-light text-capitalize">
+                  <form action="/contact" method="post">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                              <label for="name" class="form-label">name</label>
+                              <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                              <label for="email" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
+                        </div>
+                        <div class="mb-3">
+                              <label for="number" class="form-label">number</label>
+                              <input type="number" class="form-control" id="number" name="number"
+                                    placeholder="Your number">
+                        </div>
+                        <div class="mb-3">
+                              <label for="message" class="form-label">message</label>
+                              <textarea class="form-control" id="message" rows="5" name="message"
+                                    placeholder="message"></textarea>
+                        </div>
+                        <div class="mb-3 d-grid">
+                              <input class="btn btn-primary btn-block" type="submit" value="submit">
+                        </div>
+
+                  </form>
+            </div>
+      </div>
+</body>
+{% endblock body %}
