@@ -19,17 +19,3 @@ def index(request):
         messages.success(request, 'Your message have been send!')
 
     return render(request, 'index.html')
-    # return HttpResponse("hello, dev!")
-
-
-''' def about(request):
-    return render(request, 'about.html')
-
-
-def service(request):
-    return render(request, 'service.html')
-
-
-def contact(request):
-
-    return render(request, 'contact.html') '''
