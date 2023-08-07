@@ -4,7 +4,7 @@ from django.contrib import messages
 # Create your models here.
 
 
-class Contact(models.Model):
+class ContactInfo(models.Model):
     name = models.CharField(max_length=122)
     email = models.CharField(max_length=122)
     number = models.CharField(max_length=15)
