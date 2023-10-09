@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /var/www/html/dev
+          cd /home/ubuntu/project/django_template
           git pull origin main
           # Add any additional deployment commands here
 
