@@ -1,5 +1,7 @@
+asgiref
+dj-database-url
 Django
 gunicorn
+packaging
+typing_extensions
 whitenoise
-dj-database-url
-psycopg2
